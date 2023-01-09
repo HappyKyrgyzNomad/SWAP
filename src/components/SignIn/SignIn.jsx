@@ -10,7 +10,7 @@ export default function SignIn({ openModal, setOpenModal, toggle }) {
   const toggleLocal = () => setOpenModal(() => false);
   const [click, setClick] = useState(false);
   const clicked = () => setClick(!click);
-
+  console.log(click);
   return (
     <div id="container">
       <div className="modal">
