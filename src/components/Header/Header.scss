@@ -1,11 +1,12 @@
 @import "../../Variables/Variables.scss";
 .header {
-  width: 90%;
+  width: 100%;
   height: 80px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  background-color: #ffffff;
 
   &__center {
     display: flex;

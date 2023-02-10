@@ -1,0 +1,40 @@
+.mainCard {
+  position: relative;
+  max-width: 400px;
+  row-gap: 20px;
+  display: flex;
+  border-radius: 20px 20px 20px 20px;
+
+  &__topContainer {
+    display: grid;
+  }
+
+  &__bottomContainer {
+    height: 145px;
+    background: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+    grid-template-columns: auto auto;
+    padding: 15px;
+    // border-top: 1px solid black;
+  }
+  &__image {
+    border-radius: 20px 20px 0px 0px;
+  }
+  &__title {
+    width: 196px;
+    height: 60px;
+  }
+  &__like {
+    position: absolute;
+    right: 10px;
+    bottom: 90px;
+
+    // transition: all 1 ease-in-out;
+  }
+  &__like:hover {
+    opacity: 50%;
+  }
+}
+.mainCard:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}

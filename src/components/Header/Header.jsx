@@ -3,9 +3,16 @@ import { useState } from "react";
 import "./Header.scss";
 import SignIn from "../SignIn/SignIn";
 import App from "../../App";
+import SignUp from "../SignUp/SignUp.jsx";
 
-export default function Header({ openModal, setOpenModal }) {
-  const toggle = () => setOpenModal((openModal) => !openModal);
+export default function Header({
+  openModal,
+  setOpenModal,
+  openReg,
+  setOpenReg,
+}) {
+  const toggleIn = () => setOpenModal(true);
+  const toggleUp = () => setOpenReg(true);
 
   return (
     <div className="header">
@@ -18,11 +25,13 @@ export default function Header({ openModal, setOpenModal }) {
         <li>Контакты</li>
       </ul>
       <div className="header__sign sign">
-        <button onClick={toggle} className="sign__in">
+        <button onClick={toggleIn} className="sign__in">
           Вход
         </button>
-
-        <button className="sign__up">Регистрация</button>
+        <div />
+        <button onClick={toggleUp} className="sign__up">
+          Регистрация
+        </button>
       </div>
     </div>
   );
