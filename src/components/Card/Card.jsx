@@ -3,13 +3,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useState } from "react";
+import heart from "../../images/heart.png";
+import heartRed from "../../images/favorite.png";
 
-function Card({ title, description, images, like }) {
+function Card({ title, description, images }) {
   useEffect(() => {
     AOS.init({ duration: 500 });
   }, []);
-  const [liked, setLike] = useState(false);
-  const likedd = () => setLike(console.log("clicked"));
+  const [like, setLike] = useState(false);
+  const liked = () => setLike(!like);
 
   return (
     <div className="mainCard" data-aos="zoom-in">
@@ -25,12 +27,24 @@ function Card({ title, description, images, like }) {
           {" "}
           <h1 className="mainCard__title">{title}</h1>
           <p className="child__description">{description}</p>
-          <img
-            onClick={likedd}
-            className="mainCard__like"
-            width="30px"
-            src={like}
-          ></img>
+          <span>
+            {" "}
+            {like ? (
+              <img
+                src={heartRed}
+                onClick={liked}
+                className="mainCard__like"
+                width="30px"
+              />
+            ) : (
+              <img
+                src={heart}
+                onClick={liked}
+                className="mainCard__like"
+                width="30px"
+              ></img>
+            )}
+          </span>
         </div>
       </div>
     </div>

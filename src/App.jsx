@@ -9,6 +9,8 @@ import SignIn from "./components/SignIn/SignIn.jsx";
 import Slider from "./components/Slider/Slider";
 import Programs from "./components/Programs/Programs.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
+import Footer from "./components/Footer/Footer";
+import Subscribe from "./components/Subscribe/Subscribe";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -28,6 +30,10 @@ function App() {
         {openReg && <SignUp setOpenReg={setOpenReg} />}
         <SearchBar />
         <Programs />
+      </div>
+      <Subscribe />
+      <div className="app__container">
+        <Footer />
       </div>
     </div>
   );

@@ -4,19 +4,9 @@ export default function SearchBar() {
   return (
     <div className="parent-bar">
       <form>
-        <input type="text" placeholder="Search..." />
+        <input type="text" placeholder="Найти программу..." />
         <button type="submit">Go</button>
       </form>
-
-      {/* //   <label>Country </label>
-    //   <input />
-    //   <label>Duration</label>
-    //   <input />
-    //   <label>Type</label>
-    //   <input /> <label>Deadline</label>
-    //   <input />
-    //   <button className=" button clean">Clean</button>
-    //   <button className="button search">Search</button> */}
     </div>
   );
 }
