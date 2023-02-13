@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import App from "./App.jsx";
 // import Mainpage from "./pages/MainPage/MainPage";
 // import ErrorPage from "./pages/ErrorPage/ErrorPage";
@@ -23,8 +27,11 @@ import App from "./App.jsx";
 // ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
-//   <React.StrictMode>
-//     {/* <RouterProvider router={router} /> */}
-//   </React.StrictMode>
-// );
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      {" "}
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);

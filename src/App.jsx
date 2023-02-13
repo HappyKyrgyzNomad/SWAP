@@ -1,16 +1,16 @@
-import { key } from "localforage";
-import { useEffect } from "react";
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
 import "./App.scss";
 import Header from "./components/Header/Header.jsx";
 import SearchBar from "./components/SearchBar/SearchBar";
 import SignIn from "./components/SignIn/SignIn.jsx";
-import Slider from "./components/Slider/Slider";
 import Programs from "./components/Programs/Programs.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
 import Footer from "./components/Footer/Footer";
 import Subscribe from "./components/Subscribe/Subscribe";
+import MainPage from "./pages/MainPage/MainPage";
+import Slider from "./components/Slider/Slider";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -19,10 +19,10 @@ function App() {
   return (
     <div className="app">
       <Header
-        openModal={openModal}
-        setOpenModal={setOpenModal}
         openReg={openReg}
         setOpenReg={setOpenReg}
+        openModal={openModal}
+        setOpenModal={setOpenModal}
       />
       <Slider />
       <div className="app__container">
@@ -34,7 +34,7 @@ function App() {
       <Subscribe />
       <div className="app__container">
         <Footer />
-      </div>
+      </div>{" "}
     </div>
   );
 }

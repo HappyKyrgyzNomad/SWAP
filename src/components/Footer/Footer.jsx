@@ -2,6 +2,7 @@ import "./Footer.scss";
 import instagram from "../../images/instagram-logo.png";
 import facebook from "../../images/facebook.png";
 import vk from "../../images/vk.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -16,9 +17,13 @@ export default function Footer() {
         <div className="container__links">
           {" "}
           <h1>Быстрые ссылки</h1>
-          <p>Главная</p>
-          <p>О нас </p>
-          <p>Наши сервисы</p>
+          <nav>
+            {" "}
+            <Link to="/mainpage">Главная</Link>
+            <p></p>
+            <p>О нас </p>
+            <p>Наши сервисы</p>
+          </nav>
         </div>
         <div className="programsFoot">
           <h1>Программы</h1>

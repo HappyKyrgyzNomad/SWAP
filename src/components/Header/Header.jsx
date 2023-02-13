@@ -5,15 +5,15 @@ import SignIn from "../SignIn/SignIn";
 import App from "../../App";
 import SignUp from "../SignUp/SignUp.jsx";
 
-export default function Header({
-  openModal,
-  setOpenModal,
-  openReg,
-  setOpenReg,
-}) {
-  const toggleIn = () => setOpenModal(true);
-  const toggleUp = () => setOpenReg(true);
-
+export default function Header({ setOpenModal, setOpenReg }) {
+  const toggleIn = () => {
+    setOpenModal(true);
+    setOpenReg(false);
+  };
+  const toggleUp = () => {
+    setOpenReg(true);
+    setOpenModal(false);
+  };
   return (
     <div className="header">
       <h2 className="header__logo">SWAP</h2>
