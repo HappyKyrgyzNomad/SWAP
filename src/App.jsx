@@ -23,13 +23,25 @@ function App() {
         setOpenReg={setOpenReg}
         openModal={openModal}
         setOpenModal={setOpenModal}
-      />
+      />{" "}
       {openModal && <SignIn setOpenModal={setOpenModal} />}
       {openReg && <SignUp setOpenReg={setOpenReg} />}
-      <Routes>
-        <Route path="/" element={<MainPage />} />{" "}
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
+      <div className="app__routes">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <MainPage
+                openReg={openReg}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+                setOpenReg={setOpenReg}
+              />
+            }
+          />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </div>
       <div className="app__container">
         <Footer />
       </div>{" "}

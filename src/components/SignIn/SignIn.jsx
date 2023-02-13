@@ -6,9 +6,9 @@ import contact from "../../Icon/Login/Portal.svg";
 import passwordVisibility from "../../images/Icon/filled/action/visibility-off.png";
 import eyeIcon from "../../images/eye.png";
 
-export default function SignIn({ openModal, setOpenModal, toggle }) {
+export default function SignIn({ openModal, setOpenModal }) {
   const toggleLocal = () => setOpenModal(() => false);
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
   const clicked = () => setClick(!click);
   console.log(click);
   return (
@@ -43,9 +43,13 @@ export default function SignIn({ openModal, setOpenModal, toggle }) {
           />
           <span className="logo-eye">
             {click ? (
-              <img src={eyeIcon} onClick={clicked}  alt="eyeicon"/>
+              <img src={eyeIcon} onClick={clicked} alt="eyeicon" />
             ) : (
-              <img src={passwordVisibility} onClick={clicked}  alt="passvisiability"/>
+              <img
+                src={passwordVisibility}
+                onClick={clicked}
+                alt="passvisiability"
+              />
             )}
           </span>
         </div>

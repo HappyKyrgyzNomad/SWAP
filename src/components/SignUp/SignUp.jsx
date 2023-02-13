@@ -6,7 +6,7 @@ import contact from "../../Icon/Login/Portal.svg";
 import passwordVisibility from "../../images/Icon/filled/action/visibility-off.png";
 import eyeIcon from "../../images/eye.png";
 
-export default function SignUp({ openReg, setOpenReg }) {
+export default function SignUp({ setOpenReg }) {
   const toggleReg = () => setOpenReg(() => false);
   const [click, setClick] = useState(false);
   const clicked = () => setClick(!click);
@@ -45,7 +45,7 @@ export default function SignUp({ openReg, setOpenReg }) {
             {click ? (
               <img src={eyeIcon} onClick={clicked} alt="SOME" />
             ) : (
-              <img src={passwordVisibility} onClick={clicked} alt="pass"/>
+              <img src={passwordVisibility} onClick={clicked} alt="pass" />
             )}
           </span>
         </div>

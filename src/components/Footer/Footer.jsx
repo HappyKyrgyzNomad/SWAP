@@ -19,10 +19,14 @@ export default function Footer() {
           <h1>Быстрые ссылки</h1>
           <nav>
             {" "}
-            <Link to="/">Главная</Link>
+            <Link className="container__link" to="/">
+              Главная
+            </Link>
             <p></p>
             {/* <p>О нас </p> */}
-            <Link to="/about">О нас</Link>
+            <Link className="container__link" to="/about">
+              О нас
+            </Link>
             <p>Наши сервисы</p>
           </nav>
         </div>
