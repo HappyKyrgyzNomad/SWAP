@@ -43,9 +43,9 @@ export default function SignIn({ openModal, setOpenModal, toggle }) {
           />
           <span className="logo-eye">
             {click ? (
-              <img src={eyeIcon} onClick={clicked} />
+              <img src={eyeIcon} onClick={clicked}  alt="eyeicon"/>
             ) : (
-              <img src={passwordVisibility} onClick={clicked} />
+              <img src={passwordVisibility} onClick={clicked}  alt="passvisiability"/>
             )}
           </span>
         </div>

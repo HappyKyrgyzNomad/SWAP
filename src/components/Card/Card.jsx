@@ -16,11 +16,11 @@ function Card({ title, description, images }) {
   return (
     <div className="mainCard" data-aos="zoom-in">
       <div className="mainCard__topContainer">
-        <img
+        <img 
           src={images}
           width="402px"
           height="253px"
-          alt=""
+          alt="something"
           className="mainCard__image"
         />
         <div className="mainCard__bottomContainer">
@@ -35,6 +35,7 @@ function Card({ title, description, images }) {
                 onClick={liked}
                 className="mainCard__like"
                 width="30px"
+                alt="someimg"
               />
             ) : (
               <img
@@ -42,6 +43,7 @@ function Card({ title, description, images }) {
                 onClick={liked}
                 className="mainCard__like"
                 width="30px"
+                alt="someimg"
               ></img>
             )}
           </span>

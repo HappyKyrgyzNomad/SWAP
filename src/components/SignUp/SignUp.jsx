@@ -43,9 +43,9 @@ export default function SignUp({ openReg, setOpenReg }) {
           />
           <span className="logo-eye">
             {click ? (
-              <img src={eyeIcon} onClick={clicked} />
+              <img src={eyeIcon} onClick={clicked} alt="SOME" />
             ) : (
-              <img src={passwordVisibility} onClick={clicked} />
+              <img src={passwordVisibility} onClick={clicked} alt="pass"/>
             )}
           </span>
         </div>

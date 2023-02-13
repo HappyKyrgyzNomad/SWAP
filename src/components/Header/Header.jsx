@@ -1,10 +1,5 @@
 import React from "react";
-import { useState } from "react";
 import "./Header.scss";
-import SignIn from "../SignIn/SignIn";
-import App from "../../App";
-import SignUp from "../SignUp/SignUp.jsx";
-
 export default function Header({
   openModal,
   setOpenModal,

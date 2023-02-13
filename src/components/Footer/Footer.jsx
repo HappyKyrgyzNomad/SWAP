@@ -8,9 +8,9 @@ export default function Footer() {
     <div className="container">
       <div className="container_media">
         <h1>SWAP</h1>
-        <img src={instagram}></img>
-        <img src={facebook}></img>
-        <img src={vk}></img>
+        <img src={instagram} alt="something"></img>
+        <img src={facebook}  alt="something"></img>
+        <img src={vk}  alt="something"></img>
       </div>
       <div className="container__info">
         <div className="container__links">
