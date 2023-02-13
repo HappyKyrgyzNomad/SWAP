@@ -11,11 +11,11 @@ import Footer from "./components/Footer/Footer";
 import Subscribe from "./components/Subscribe/Subscribe";
 import MainPage from "./pages/MainPage/MainPage";
 import Slider from "./components/Slider/Slider";
+import AboutPage from "././pages/AboutPage/AboutPage.jsx";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
   const [openReg, setOpenReg] = useState(false);
-
   return (
     <div className="app">
       <Header
@@ -24,14 +24,12 @@ function App() {
         openModal={openModal}
         setOpenModal={setOpenModal}
       />
-      <Slider />
-      <div className="app__container">
-        {openModal && <SignIn setOpenModal={setOpenModal} />}
-        {openReg && <SignUp setOpenReg={setOpenReg} />}
-        <SearchBar />
-        <Programs />
-      </div>
-      <Subscribe />
+      {openModal && <SignIn setOpenModal={setOpenModal} />}
+      {openReg && <SignUp setOpenReg={setOpenReg} />}
+      <Routes>
+        <Route path="/" element={<MainPage />} />{" "}
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
       <div className="app__container">
         <Footer />
       </div>{" "}

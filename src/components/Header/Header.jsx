@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
-import SignIn from "../SignIn/SignIn";
-import App from "../../App";
-import SignUp from "../SignUp/SignUp.jsx";
 
 export default function Header({ setOpenModal, setOpenReg }) {
   const toggleIn = () => {
@@ -19,9 +16,13 @@ export default function Header({ setOpenModal, setOpenReg }) {
       <h2 className="header__logo">SWAP</h2>
       <ul className="header__center">
         {" "}
-        <li>Главная</li>
-        <li>Программы</li>
-        <li>О нас</li>
+        <Link className="header__link" to="/">
+          Главная
+        </Link>
+        <li>Программы</li>{" "}
+        <Link className="header__link" to="/about">
+          О нас{" "}
+        </Link>
         <li>Контакты</li>
       </ul>
       <div className="header__sign sign">

@@ -9,9 +9,9 @@ export default function Footer() {
     <div className="container">
       <div className="container_media">
         <h1>SWAP</h1>
-        <img src={instagram}></img>
-        <img src={facebook}></img>
-        <img src={vk}></img>
+        <img src={instagram} alt="something"></img>
+        <img src={facebook} alt="something"></img>
+        <img src={vk} alt="something"></img>
       </div>
       <div className="container__info">
         <div className="container__links">
@@ -19,9 +19,10 @@ export default function Footer() {
           <h1>Быстрые ссылки</h1>
           <nav>
             {" "}
-            <Link to="/mainpage">Главная</Link>
+            <Link to="/">Главная</Link>
             <p></p>
-            <p>О нас </p>
+            {/* <p>О нас </p> */}
+            <Link to="/about">О нас</Link>
             <p>Наши сервисы</p>
           </nav>
         </div>

@@ -1,11 +1,7 @@
-import { key } from "localforage";
 import { useEffect } from "react";
 import { useState } from "react";
 import "./Programs.scss";
 import Card from "../Card/Card";
-import flex from "../../images/flex.png";
-import heart from "../../images/heart2.png";
-import girls from "../../images/girls.jpg";
 
 export default function Programs() {
   const [programsData, setProgramsData] = useState([]);

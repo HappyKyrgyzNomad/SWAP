@@ -1,10 +1,6 @@
 import "./Slider.scss";
-import img from "../../images/sliderPhoto.jpg";
 import { useState } from "react";
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import SearchBar from "../SearchBar/SearchBar";
 
 export default function Slider({ openModal }) {
   const [photos, setPhotos] = useState([]);
@@ -23,7 +19,7 @@ export default function Slider({ openModal }) {
   return (
     <div className="slider">
       <div>
-        <img
+        <img alt="some"
           src={photos[randomId(3)] && photos[randomId(3)].images}
           className="img"
         ></img>
