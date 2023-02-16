@@ -41,17 +41,15 @@ export default function SignIn({ openModal, setOpenModal }) {
             minLength="8"
             required="8"
           />
-          <span className="logo-eye">
-            {click ? (
-              <img src={eyeIcon} onClick={clicked} alt="eyeicon" />
-            ) : (
-              <img
-                src={passwordVisibility}
-                onClick={clicked}
-                alt="passvisiability"
-              />
-            )}
-          </span>
+          {click ? (
+            <img src={eyeIcon} onClick={clicked} alt="eyeicon" />
+          ) : (
+            <img
+              src={passwordVisibility}
+              onClick={clicked}
+              alt="passvisiability"
+            />
+          )}
         </div>
 
         <button className="modal__in">Войти</button>
