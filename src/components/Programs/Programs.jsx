@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./Programs.scss";
 import Card from "../Card/Card";
+import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 export default function Programs() {
   const [programsData, setProgramsData] = useState([]);
@@ -11,7 +13,6 @@ export default function Programs() {
       .then((data) => setProgramsData(data));
   }, []);
   console.log(programsData);
-
   return (
     <div className="programs">
       <div className="programs__sort">
@@ -27,6 +28,7 @@ export default function Programs() {
             title={data.title}
             images={data.images}
             like={data.like}
+            link={data.link}
           />
         ))}
       </div>

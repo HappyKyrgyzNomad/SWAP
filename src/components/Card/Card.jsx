@@ -6,7 +6,7 @@ import { useState } from "react";
 import heart from "../../images/heart.png";
 import heartRed from "../../images/favorite.png";
 
-function Card({ title, description, images }) {
+function Card({ title, description, images, link }) {
   useEffect(() => {
     AOS.init({ duration: 500 });
   }, []);
@@ -16,16 +16,18 @@ function Card({ title, description, images }) {
   return (
     <div className="mainCard" data-aos="zoom-in">
       <div className="mainCard__topContainer">
-        <img 
+        <img
           src={images}
           width="402px"
           height="253px"
           alt="something"
           className="mainCard__image"
         />
+
         <div className="mainCard__bottomContainer">
-          {" "}
-          <h1 className="mainCard__title">{title}</h1>
+          <a href={link} className="mainCard__title">
+            {title}
+          </a>
           <p className="child__description">{description}</p>
           <span>
             {" "}

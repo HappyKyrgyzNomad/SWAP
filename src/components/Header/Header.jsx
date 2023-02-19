@@ -19,7 +19,9 @@ export default function Header({ setOpenModal, setOpenReg }) {
         <Link className="header__link" to="/">
           Главная
         </Link>
-        <li>Программы</li>{" "}
+        <Link className="header__link" to="/allprograms">
+          Программы
+        </Link>
         <Link className="header__link" to="/about">
           О нас{" "}
         </Link>

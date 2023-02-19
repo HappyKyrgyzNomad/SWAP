@@ -21,6 +21,7 @@
     border-radius: 20px 20px 0px 0px;
   }
   &__title {
+    display: contents;
     width: 196px;
     height: 60px;
   }
@@ -33,6 +34,12 @@
   }
   &__like:hover {
     opacity: 50%;
+  }
+  a {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
   }
 }
 .mainCard:hover {

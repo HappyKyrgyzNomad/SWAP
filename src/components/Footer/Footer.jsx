@@ -23,23 +23,23 @@ export default function Footer() {
               Главная
             </Link>
             <p></p>
-            {/* <p>О нас </p> */}
             <Link className="container__link" to="/about">
               О нас
             </Link>
-            <p>Наши сервисы</p>
+            <a href="https://www.instagram.com/talacoustics/">Наши сервисы</a>
           </nav>
         </div>
         <div className="programsFoot">
           <h1>Программы</h1>
-          <p>DAAD</p>
-          <p>Tech girls </p>
-          <p>FLEX</p>
+
+          <a href="https://www.daad.de/en/">DAAD</a>
+          <a href="https://techgirlsglobal.org/">Tech girls </a>
+          <a href="https://www.discoverflex.org/">FLEX</a>
         </div>
         <div className="community">
           <h1>Сообщества </h1>
           <p>Студенты</p>
-          <p>Инструкторы </p>
+          <a href="https://www.instagram.com/aishirin_zh/">Инструкторы </a>
           <p>Бесплатыне ресурсы</p>
         </div>
       </div>
