@@ -7,6 +7,12 @@
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
+  &__logo {
+    text-decoration: none;
+    color: inherit;
+    list-style-type: none;
+    font-weight: 600;
+  }
 
   &__center {
     display: flex;

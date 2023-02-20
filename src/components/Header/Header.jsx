@@ -13,7 +13,9 @@ export default function Header({ setOpenModal, setOpenReg }) {
   };
   return (
     <div className="header">
-      <h2 className="header__logo">SWAP</h2>
+      <Link to="/" className="header__logo">
+        SWAP
+      </Link>
       <ul className="header__center">
         {" "}
         <Link className="header__link" to="/">
