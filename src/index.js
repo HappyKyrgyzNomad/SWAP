@@ -2,9 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import {
-  BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter
 } from "react-router-dom";
 import App from "./App.jsx";
 // import Mainpage from "./pages/MainPage/MainPage";

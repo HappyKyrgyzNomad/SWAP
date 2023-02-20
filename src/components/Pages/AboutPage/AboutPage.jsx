@@ -11,7 +11,7 @@ export default function Slider() {
         Quam itaque laboriosam, quia est rerum similique repudiandae odit,
         libero a esse nobis.
       </p>
-      <img
+      <img alt="pofdjaf"
         width="100%"
         src="https://static.vecteezy.com/system/resources/previews/002/258/145/original/happy-students-celebrating-graduation-free-vector.jpg"
       ></img>

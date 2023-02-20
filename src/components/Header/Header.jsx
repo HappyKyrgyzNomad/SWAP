@@ -27,7 +27,7 @@ export default function Header({ setOpenModal, setOpenReg }) {
         <Link className="header__link" to="/about">
           О нас{" "}
         </Link>
-        <li>Контакты</li>
+        <Link className="header__link" to="/contact">Контакты</Link>
       </ul>
       <div className="header__sign sign">
         <button onClick={toggleIn} className="sign__in">
