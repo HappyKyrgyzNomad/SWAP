@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./Programs.scss";
 import Card from "../Card/Card";
-import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
 
 export default function Programs() {
   const [programsData, setProgramsData] = useState([]);

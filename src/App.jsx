@@ -4,16 +4,13 @@ import { useEffect } from "react";
 
 import "./App.scss";
 import Header from "./components/Header/Header.jsx";
-import SearchBar from "./components/SearchBar/SearchBar";
 import SignIn from "./components/SignIn/SignIn.jsx";
-import Programs from "./components/Programs/Programs.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
 import Footer from "./components/Footer/Footer";
-import Subscribe from "./components/Subscribe/Subscribe";
 import MainPage from "./components/Pages/MainPage/MainPage.jsx";
-import Slider from "./components/Slider/Slider";
 import AboutPage from "./components/Pages/AboutPage/AboutPage.jsx";
 import ProgramsPage from "./components/Pages/ProgramsPage";
+import ContactPage from "./components/Pages/ContactPage/ContactPage";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -48,6 +45,7 @@ function App() {
           />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/allprograms" element={<ProgramsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
       <div className="app__container">
